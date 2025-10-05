@@ -5,6 +5,7 @@ d3.csv("data/tvBrandCount.csv", d => {
         count: +d.count // '+' converts string to number
     };
 }).then(data => {
+    data.sort((a, b) => d3.descending(a.count, b.count));
     //console.log(data); // array of typed objects
     createBarChart(data);
 });
