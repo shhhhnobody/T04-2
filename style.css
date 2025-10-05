@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #ddceb7;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #81663e;
+  padding: 10px 20px;
+}
+
+nav img {
+  height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #c8b175;
+}
+
+nav ul li a.active {
+  background: #fbe79c;
+  color: black;
+}
+
+main#content {
+    padding: 40px 40px 100px 40px; 
+    text-align: center;
+}
+
+main#content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+main#content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* center paragraph */
+}
+
+main h1 {
+  padding: 10px 20px;   
+  font-size: 18px;
+}
+
+main h3 {
+  color: #d79330;
+}
+
+.fun-fact-box {
+    background-color: #e9e2d9;
+    border-left: 5px solid #d79330;
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.fun-fact-box h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #d79330;
+    display: flex;
+    align-items: center;
+}
+
+/* Make images responsive */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Content box style */
+.content-box {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Tips grid layout */
+.tips-container {
+  margin: 20px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.tip-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.tip-box:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+    background-color: #ed9e29;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* left-right alignment */
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
