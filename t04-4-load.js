@@ -5,14 +5,15 @@ d3.csv("data/tvBrandCount.csv", d => {
         count: +d.count // '+' converts string to number
     };
 }).then(data => {
-    console.log(data); // array of typed objects
+    //console.log(data); // array of typed objects
+    createBarChart(data);
 });
 
-/* Stub: will draw the chart in T04-5 */
+/* Stub: will draw the chart in T04-5 
 function createBarChart(data) {
   console.log("createBarChart received", data.length, "rows");
-}
-/* Load CSV, Convert Type, Quick Check */
+} */
+/* Load CSV, Convert Type, Quick Check 
 d3.csv("data/tvBrandCount.csv", d => ({
     brand: d.brand,
     count: +d.count
@@ -27,4 +28,4 @@ d3.csv("data/tvBrandCount.csv", d => ({
     data.sort((a, b) => d3.descending(a.count, b.count));
     // Hand off to the chart builder (implemented next exercise)
     createBarChart(data);
-})
+}) */
