@@ -15,20 +15,13 @@
                 <li><a href="#" data-page="aboutus">About Us</a></li>
             </ul>
         </nav>
-        <main id="content">
-            <h1>Appliance Energy Consumption in Australia</h1>
-            <p>
-                G'day! Here, you can have an overview of the household appliance energy consumption in the Australian market.
-            </p>
-            <div class="fun-fact-box">
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li><strong>Energy Labels:</strong> More stars = more energy efficiency. Choose wisely!</li>
-                    <li><strong>Standby Power:</strong> Appliances on standby can cost up to $100/year. Turn them off at the wall!</li>
-                    <li><strong>Smart Savings:</strong> Use smart plugs or pick fridges/appliances with low running costs.</li>
-                </ul>
-            </div>
-        </main>
+        <h1>Appliance Energy Consumption</h1>
+        <div id="content"></div>
+        <!-- Give the SVG a size so shapes can be seen -->
+        <svg width="300" height="150"></svg>
+        <!-- Load D3 first, then your D3 code file -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="energy-d3.js"></script>
 
         <footer>
             <span class="footer-left">&copy; 2025 Shirleen Chuo Tsze Ting</span>
